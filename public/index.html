@@ -5,72 +5,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voces de los abuelos</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <nav></nav>
-    <h1 class="title">Voces de los Abuelos</h1>
-  </header>
-  <aside>
-    <ul>
-      <li>¿Quienes somos?</li>
-      <li>Contacto</li>
-      <li>Cuentanos tu historia</li>
-    </ul>
-  </aside>
-  <main>
-    <h2>Voces de los abuelos</h2>
-    <p class="text-center">Somos un proyecto en el que la oralidad, los mitos y las historias son el corazón de éste.
-    </p>
-    <section>
-      <p>Al rededor de las personas se esconden historias magicas qhe probablemente se desconocen.</p>
-      <article>
-        <header>
-          <h4>Misión</h4>
-        </header>
-        <p>Recuperar las memorias de las comunidsdes en Medellín para preservar y salvaguardar su patrimonio en calidad
-          de la ficción y de la historia de los barrios y las comunidades.</p>
-        <footer>
-          <small>Mueren las personas, pero sus historias se guardan en nuestras memorias</small>
-        </footer>
-      </article>
-      <article>
-        <header>
-          <h4>¿Qué hacemos?</h4>
-        </header>
-        <iframe width="720" height="480" src="https://www.youtube.com/embed/rFlat6pfQdY"
-          title="Mito y Leyendas Colombianas (extracto testimonios)" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <footer>
-          <small>Mueren las personas, pero sus historias se guardan en nuestras memorias</small>
-        </footer>
-      </article>
-    </section>
-    <section>
-      <h3>Contacto</h3>
-      <form action="">
-        <div class="input-group">
-          <label>
-            Nombre: <input type="text" name="nombre" id="nombre" placeholder="Digite su nombre" required>
-          </label>
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cuentanos tu historia</a>
+            </li>
+          </ul>
         </div>
-        <div class="input-group">
-          <label>
-            Email: <input type="email" name="correo" id="correo" placeholder="Digite su correo" required>
-          </label>
+      </nav>
+    </header>
+
+    <div class="row">
+      <aside class="col-sm-12 col-md-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#somos">¿Quienes somos?</a></li>
+          <li class="list-group-item"><a href="#contacto">Contacto</a></li>
+          <li class="list-group-item"><a href="#historia">Cuentanos tu historia</a></li>
+        </ul>
+      </aside>
+      <main class="col-sm-12 col-md-10">
+        <div class="container text-center">
+          <h2>Voces de los abuelos</h2>
+          <p>Somos un proyecto en el que la oralidad, los mitos y las historias son el corazón de
+            éste.
+          </p>
+          <p class="lead">Al rededor de las personas se esconden historias magicas que probablemente se desconocen.</p>
         </div>
-        <div class="input-group">
-          <textarea name="mensaje" id="mensaje" placeholder="Cuentanos tu historia"></textarea>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer>
-    Desarrollador por <a href="https://github.com/jfelipeq14">jfelipeq14</a>
-  </footer>
+
+        <section class="row p-5">
+          <article class="col-md-6 text-center">
+            <header>
+              <h4>Misión</h4>
+            </header>
+            <p>Recuperar las memorias de las comunidades en Medellín para preservar y salvaguardar su patrimonio en
+              calidad
+              de la ficción y de la historia de los barrios y las comunidades.</p>
+            <footer>
+              <a class="btn btn-secondary" href="#">Saber más</a>
+            </footer>
+          </article>
+          <article class="col-md-6 text-center">
+            <header>
+              <h4>¿Qué hacemos?</h4>
+            </header>
+            <iframe src="https://www.youtube.com/embed/rFlat6pfQdY"
+              title="Mito y Leyendas Colombianas (extracto testimonios)" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <footer>
+              <small>Mueren las personas, pero sus historias se guardan en nuestras memorias</small>
+            </footer>
+          </article>
+        </section>
+        <section class="row text-center">
+          <form class="col-md-6 text-left shadow p-5 rounded m-5">
+            <h3>Cuentanos tu historia</h3>
+            <div class="form-group">
+              <label>Nombre completo:
+                <input type="text" class="form-control" placeholder="Digite su nombre" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label>Correo:
+                <input type="email" class="form-control" placeholder="Digite su correo" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label>Historia:
+                <textarea class="form-control" placeholder="Digite su historia" required></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          <article class="col-md-6">
+            <header>
+              <h3>Redes sociales</h3>
+            </header>
+            <ul>
+              <li></li>
+            </ul>
+            <footer>
+              <small>Siguenos y comparte nuestro contenido</small>
+            </footer>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer class="footer text-center p-5 m-5">
+      Desarrollador por <a href="https://github.com/jfelipeq14">jfelipeq14</a>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
